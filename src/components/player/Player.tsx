@@ -7,8 +7,8 @@ const Player: FC = () => {
   const meshRef = useRef<THREE.Mesh>(null);
   const velocity = useRef(new THREE.Vector3());
   const direction = useRef(new THREE.Vector3());
-  const { camera } = useThree();
   const [isOnGrond, setIsOnGrond] = useState(false);
+  const { camera } = useThree();
 
   const { scene } = useGLTF("/models/FinalBaseMesh.glb");
 
